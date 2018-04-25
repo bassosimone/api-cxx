@@ -9,7 +9,7 @@ done
 if [ "$download" -ne 0 ]; then
   set -ex
   virtualenv venv
-  source ./venv/bin/activate
+  . ./venv/bin/activate
   pip install cget
   cget install measurement-kit/measurement-kit
 fi
